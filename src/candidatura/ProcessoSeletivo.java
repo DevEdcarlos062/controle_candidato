@@ -1,10 +1,26 @@
 package candidatura;
+
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        selecaoCandidatos();
-    }
+        //chamar os métados para executar suas funcionalidades
+        imprimirSelecionados();
+        
+        
+   
+    }  
+       static void imprimirSelecionados() {
+         String [] candidatos = {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO"};
+         System.out.println("imprimindo a lista de candidatos informando o indice do elemento");
+
+        for(int indice=0; indice < candidatos.length;indice++) {
+            System.out.println("O candidato de n° " + (indice+1) + " é o " + candidatos[indice]);    
+         }
+    
+       }
+    
     static void selecaoCandidatos() {
         //array com a lista de candidatos
         
